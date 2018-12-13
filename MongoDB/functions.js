@@ -19,3 +19,12 @@ function getMoviesByRating(userID) {
 function searchMovie(movieName) {
     
 }
+
+function addReview(userID, movieID, text ) {
+    db.reviews.insert({
+        'userId': userID,
+        'movieId': movieID,
+        'review_text': text,
+        'timestamp':  $currentDate
+    })
+}
