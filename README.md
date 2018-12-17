@@ -8,13 +8,14 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-Make sure you have PostgreSQL installed and the right path to the pgsql files
+Make sure you have PostgreSQL installed and the right path to the pgsql files.
+You need to add the full MovieLens csv files to the storage folder.
 
 
 ### Creating the database and the schema
 >run the following command from your terminal
 ```
-psql -U postgres postgres -f setupDB.pgsql
+psql -U postgres postgres -f setupDB.sql
 ```
 
 ## Authors
