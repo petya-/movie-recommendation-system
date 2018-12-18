@@ -50,6 +50,7 @@ CREATE TABLE links (
 );
 
 CREATE TABLE tags (
+    id SERIAL PRIMARY KEY,
     userId integer REFERENCES users NOT NULL,
     movieId integer REFERENCES movies NOT NULL,
     tag text,
